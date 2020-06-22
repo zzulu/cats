@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'CATcatCAT';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('./fonts/CATcatCAT.woff2') format('woff2'),
+       url('./fonts/CATcatCAT.woff') format('woff'),
+       url('./fonts/CATcatCAT.ttf') format('truetype'),
+       url('./fonts/CATcatCAT.eot') format('embedded-opentype');
+  unicode-range: U+0041-0055, U+0061-0075;
+}
