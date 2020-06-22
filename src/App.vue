@@ -74,6 +74,10 @@ html, body {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden; 
+}
+
 .container {
   position: relative;
   height: 100%;
