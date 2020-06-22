@@ -1,4 +1,6 @@
 module.exports = {
+  outputDir: 'docs',
+  publicPath: process.env.NODE_ENV === 'production' ? '/cats/' : '/',
   pages: {
     index: {
       // entry for the page
