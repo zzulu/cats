@@ -128,11 +128,6 @@ html, body {
   z-index: 1;
 }
 
-@media (min-width: 576px) {
-  .random {
-    display: none;
-  }
-}
 
 /* Transitions */
 
