@@ -14,6 +14,7 @@ export default {
 <style>
 .cat {
   padding: 0.5rem 0.5rem 2.5rem;
+  z-index: 2;
   transition: all .3s;
 }
 </style>

@@ -75,6 +75,20 @@ html, body {
   overflow: hidden;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
 .container {
   position: relative;
   height: 100%;
@@ -138,7 +152,7 @@ html, body {
 }
 
 .cats-enter-active {
-  z-index: -1;
+  z-index: 1;
 }
 
 .cats-leave-to {
@@ -146,6 +160,6 @@ html, body {
 }
 
 .cats-leave-active {
-  z-index: -1;
+  z-index: 1;
 }
 </style>
