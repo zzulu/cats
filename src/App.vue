@@ -86,6 +86,9 @@ body {
   padding-left: 0.5rem;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 576px) {
@@ -115,11 +118,8 @@ body {
 .cats {
   font-family: 'CATcatCAT';
   font-size: 5rem;
-  height: 100%;
   display: flex;
   justify-content: flex-end;
-  align-content: center;
-  align-items: center;
 }
 
 .random {
@@ -137,7 +137,7 @@ body {
 
 .cats-enter {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(90px);
 }
 
 .cats-enter-active {
