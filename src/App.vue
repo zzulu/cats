@@ -72,10 +72,7 @@ export default {
 html, body {
   height: 100%;
   margin: 0;
-}
-
-body {
-  overflow-x: hidden; 
+  overflow: hidden;
 }
 
 .container {
@@ -137,7 +134,7 @@ body {
 
 .cats-enter {
   opacity: 0;
-  transform: translateX(90px);
+  transform: translateX(80px);
 }
 
 .cats-enter-active {
