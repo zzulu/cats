@@ -22,10 +22,7 @@ export default {
     }
   },
   methods: {
-    addRandomCat: function () {
-      const charCode = Math.floor(Math.random() * 21) + 65 // 65 ~ 85
-      const shift = Math.round(Math.random()) * 32 // 0 or 32
-
+    addCat: function (charCode, shift) {
       if (this.cats.length > 20) {
         this.cats.shift()
       }
@@ -34,6 +31,12 @@ export default {
         'char': String.fromCharCode(charCode+shift),
       })
     },
+    addRandomCat: function () {
+      const charCode = Math.floor(Math.random() * 21) + 65 // 65 ~ 85
+      const shift = Math.round(Math.random()) * 32 // 0 or 32
+
+      this.addCat(charCode, shift)
+    },
   },
   created: function () {
     document.addEventListener('keydown', (e) => {
@@ -41,13 +44,9 @@ export default {
       if (charCode === 16) this.shift = true
 
       if (64 < charCode && charCode < 86) { // 65 ~ 85
-        if (this.cats.length > 20) {
-          this.cats.shift()
-        }
-        this.cats.push({
-          'id': Date.now(),
-          'char': String.fromCharCode(charCode+(this.shift ? 0 : 32)),
-        })
+        this.addCat(charCode, (this.shift ? 0 : 32))
+      } else if (charCode == 32) {
+        this.addRandomCat()
       }
     })
 
