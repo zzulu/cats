@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Cat from '@/components/Cat'
+import Cat from '@/components/Cat.vue'
 
 export default {
   name: 'App',
@@ -72,6 +72,10 @@ html, body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+}
+
+#app {
+  height: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -145,7 +149,7 @@ html, body {
 
 /* Transitions */
 
-.cats-enter {
+.cats-enter-from {
   opacity: 0;
   transform: translateX(80px);
 }
